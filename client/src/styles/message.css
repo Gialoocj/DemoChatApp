@@ -1,0 +1,34 @@
+/* CSS */
+.chat-container {
+  width: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: column; /* Đảm bảo các tin nhắn hiển thị theo chiều dọc */
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 8px;
+  max-width: 70%; /* Giả sử tin nhắn không vượt quá 70% chiều rộng của container */
+  overflow-wrap: break-word; /* Tránh từ bị cắt khi vượt quá chiều rộng */
+}
+
+.sent {
+  background-color: #dcf8c6;
+  align-self: flex-end; /* Đẩy tin nhắn từ người gửi sang bên phải */
+}
+
+.received {
+  background-color: #f1f0f0;
+  align-self: flex-start; /* Đẩy tin nhắn từ người nhận sang bên trái */
+}
+
+.message-frame {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.message-header {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

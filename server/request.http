@@ -1,0 +1,37 @@
+
+GET http://localhost:5000/api/v1/users/
+HEAD {
+    "to"
+}
+
+###
+POST http://localhost:5000/api/v1/auth/register/
+Content-Type: application/json
+
+{
+    "username": "Admin123",
+    "email":"Admin2@chatapp.com",
+    "password":"admin1@"
+}
+
+
+###
+
+POST http://localhost:5000/api/v1/auth/login/
+Content-Type: application/json
+
+{
+    "email":"Admin@chatapp.com",
+    "password":"admin1@"
+}
+
+###
+POST http://localhost:5000/api/v1/chatGPT/65d9efc58ec374abad8bae70/send-to-chat-gpt
+Content-Type: application/json
+
+{
+    "message" : "Hello" 
+}
+
+###
+DELETE  http://localhost:5000/api/v1/users/65d6fb7a88261b2fc49aea51
